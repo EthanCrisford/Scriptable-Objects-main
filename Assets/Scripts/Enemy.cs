@@ -4,12 +4,11 @@ using UnityEngine;
 
 public class Enemy : ScriptableObjects
 {
-    void Start()
+    public void Start()
     {
-        
-    }
 
-    void Update()
+    }
+    public void Update()
     {
         if (Input.GetKeyDown(KeyCode.Plus)) 
         {

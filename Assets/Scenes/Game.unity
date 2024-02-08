@@ -439,11 +439,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1722161578}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2b2f0c51e33683c4fafbb179c44025d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Name: Player
+  Health: 10
+  Lives: 3
 --- !u!65 &1722161580
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -542,7 +545,6 @@ GameObject:
   - component: {fileID: 2064305470}
   - component: {fileID: 2064305469}
   - component: {fileID: 2064305468}
-  - component: {fileID: 2064305467}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -550,18 +552,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2064305467
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2064305466}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee996898c37a4344e90f65efb9322534, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!65 &2064305468
 BoxCollider:
   m_ObjectHideFlags: 0

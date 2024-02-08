@@ -1,19 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : ScriptableObjects
 {
-    void Start()
+    public void Start()
     {
-        Debug.Log("Player name is " + Name);
-        Debug.Log("Player health is " + Health);
-        Debug.Log("Remaining lives: " + Lives);
+        
     }
-
-    void Update()
+    public void Update()
     {
-     
+        if (Input.GetKey(KeyCode.Space))
+        {
+            SceneManager.LoadScene("Test");
+        }
 
+        Debug.Log("Player health is " + Health);
+        Debug.Log("Player name is " + Name);
+        Debug.Log("Remaining lives:" + Lives);
     }
 }

@@ -6,10 +6,10 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "Player", menuName = "Players/Player", order = 10)]
 public class ScriptableObjects : ScriptableObject
 {
-    public string Name;
     public float Health;
+    public string Name;
     public int Lives;
-
+    
     public void Awake()
     {
         GameObject.DontDestroyOnLoad(this);
