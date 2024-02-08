@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ScriptableObjects : MonoBehaviour
+public class Player : ScriptableObjects
 {
     void Start()
     {
@@ -13,6 +13,7 @@ public class ScriptableObjects : MonoBehaviour
 
     void Update()
     {
-        
+     
+
     }
 }
