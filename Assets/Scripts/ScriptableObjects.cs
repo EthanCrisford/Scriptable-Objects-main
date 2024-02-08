@@ -1,18 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
-public class ScriptableObjects : MonoBehaviour
+[CreateAssetMenu(fileName = "Player", menuName = "Players/Player", order = 10)]
+public class ScriptableObjects : ScriptableObject
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public string Name;
+    public float Health;
+    public int Lives;
 
-    // Update is called once per frame
-    void Update()
+    public void Awake()
     {
-        
+        GameObject.DontDestroyOnLoad(this);
     }
 }
