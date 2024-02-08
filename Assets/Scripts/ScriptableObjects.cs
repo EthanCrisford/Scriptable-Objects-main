@@ -4,7 +4,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "Player", menuName = "Players/Player", order = 10)]
-public class ScriptableObjects : ScriptableObject
+public class Player : ScriptableObject
 {
     public string Name;
     public float Health;
