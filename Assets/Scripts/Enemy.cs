@@ -2,8 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy : ScriptableObjects
+public class Enemy : MonoBehaviour
 {
+    public PlayerData playerData;
+
     public void Start()
     {
 
@@ -12,12 +14,12 @@ public class Enemy : ScriptableObjects
     {
         if (Input.GetKeyDown(KeyCode.Plus)) 
         {
-            Health += 1;
+            playerData.Health += 1;
         }
 
         if (Input.GetKeyDown(KeyCode.Minus))
         {
-            Health -= 1;
+            playerData.Health -= 1;
         }
     }
 }

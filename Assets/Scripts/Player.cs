@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Player : ScriptableObjects
-{
+public class Player : MonoBehaviour
+{ 
+    public PlayerData playerData;
+
     public void Start()
     {
         
@@ -16,8 +18,8 @@ public class Player : ScriptableObjects
             SceneManager.LoadScene("Test");
         }
 
-        Debug.Log("Player health is " + Health);
-        Debug.Log("Player name is " + Name);
-        Debug.Log("Remaining lives:" + Lives);
+        Debug.Log("Player health is " + playerData.Health);
+        Debug.Log("Player name is " + playerData.Name);
+        Debug.Log("Remaining lives:" + playerData.Lives);
     }
 }
